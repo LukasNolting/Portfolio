@@ -1,0 +1,14 @@
+.about-section{
+    position: relative;
+    z-index: 5;
+    background-color: #141d2f;
+    top: 100px;
+}
+
+.shadow-about{
+    position: absolute;
+    width: auto;
+    height: 600px;
+    top: -200px;
+    right: 0;
+}
