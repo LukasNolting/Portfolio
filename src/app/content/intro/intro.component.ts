@@ -1,13 +1,11 @@
-import { Component, HostListener } from '@angular/core';
-import { NavigationComponent } from '../../navigation/navigation.component';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AboutMeComponent } from '../about-me/about-me.component';
 
 
 @Component({
   selector: 'app-intro',
   standalone: true,
-  imports: [NavigationComponent, CommonModule, AboutMeComponent],
+  imports: [CommonModule],
   templateUrl: './intro.component.html',
   styleUrl: './intro.component.scss',
   

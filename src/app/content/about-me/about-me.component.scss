@@ -1,14 +1,70 @@
-.about-section{
-    position: relative;
-    z-index: 5;
-    background-color: #141d2f;
-    top: 100px;
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  background-color: #141d2f;
+  // padding-bottom: 150px;
+  padding-left: 100px;
 }
 
-.shadow-about{
-    position: absolute;
-    width: auto;
-    height: 600px;
-    top: -200px;
-    right: 0;
+.shadow-about {
+  position: absolute;
+  width: auto;
+  height: 600px;
+  top: -200px;
+  right: 0;
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 650px;
+}
+
+.about-bulb {
+  display: flex;
+  gap: 35px;
+  img {
+    height: 50px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+  }
+}
+.about-puzzle {
+  display: flex;
+  gap: 35px;
+  img {
+    height: 50px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+  }
+}
+
+.character-container{
+    display: flex;
+    align-items: center;
+    img:nth-child(1){
+        border-radius: 50%;
+        border: 4px solid #1CDAE6;
+        width: 450px;
+    }
+    img:nth-child(2){
+        width: 350px;
+    }
+}
+

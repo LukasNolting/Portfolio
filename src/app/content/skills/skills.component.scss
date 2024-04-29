@@ -1,0 +1,31 @@
+section {
+  position: relative;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 100px;
+
+}
+
+.skills{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 550px;
+  gap: 50px;
+}
+
+.skill-box{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  img{
+    height: 60px;
+    width: auto;
+  }
+}
+
+
