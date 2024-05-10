@@ -1,11 +1,25 @@
-<section>
+<section id="skills">
   <div class="skills">
     <div *ngFor="let skill of skills">
       <div class="skill-box">
-          <img src="{{ skill.img }}" alt="" />
+        <img src="{{ skill.img }}" alt="" />
         {{ skill.name }}
       </div>
     </div>
   </div>
-  <div>test</div>
+
+  <div class="my-skills-container">
+    <div class="my-skills-header">
+      <div class="placeholder"></div>
+      <h1>My Skills</h1>
+      <img src="assets/img/skills/skills-line-right.png" alt="" />
+    </div>
+
+    <div class="my-skills-text">
+      I have grown my frontend developments skills that have allowed me to
+      create different real projects.
+    </div>
+
+    <button>Let´s talk!</button>
+  </div>
 </section>

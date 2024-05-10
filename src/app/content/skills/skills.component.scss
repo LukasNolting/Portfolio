@@ -3,7 +3,7 @@ section {
   padding-left: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 150px 100px;
+  padding: 150px 0px 150px 100px;
 
 }
 
@@ -11,8 +11,8 @@ section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 550px;
-  gap: 50px;
+  width: 650px;
+  gap: 50px 80px;
 }
 
 .skill-box{
@@ -28,4 +28,47 @@ section {
   }
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+}
 
+.my-skills-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  width: 100%;
+  button {
+    background-color: #00bee8;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    z-index: 3;
+    cursor: pointer;
+  }
+}
+
+
+.my-skills-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.my-skills-text{
+  display: flex;
+  text-align: end;
+  justify-content: center;
+  padding: 0 230px;
+}
+
+.placeholder{
+  width: 60px;
+}
