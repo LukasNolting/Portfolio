@@ -1,0 +1,66 @@
+section {
+  padding-left: 100px;
+  padding: 150px 0px 150px 100px;
+
+}
+
+
+
+.portfolio-line-left {
+  display: flex;
+  justify-content: flex-end;
+  width: 700px;
+}
+
+.portfolio-line-right {
+  width: 700px;
+  height: 4px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.portfolio-header-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.project-regular {
+  display: flex;
+}
+.project-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+}
+.project-description-reverse {
+  display: flex;
+  flex-direction: column;
+}

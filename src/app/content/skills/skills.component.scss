@@ -13,6 +13,7 @@ section {
   flex-wrap: wrap;
   width: 650px;
   gap: 50px 80px;
+  z-index: 10;
 }
 
 .skill-box{
@@ -71,4 +72,13 @@ h1 {
 
 .placeholder{
   width: 60px;
+}
+
+.shadow-skills{
+  position: absolute;
+  width: auto;
+  height: 600px;
+  bottom: -200px;
+  left: 0;
+  z-index: 0;
 }

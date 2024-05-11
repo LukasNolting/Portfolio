@@ -1,0 +1,48 @@
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div class="portfolio-line-left">
+      <img src="assets/img/portfolio/portfolio-line-left.png" alt="" />
+    </div>
+
+    <h1>Portfolio</h1>
+
+    <img
+      src="assets/img/portfolio/portfolio-line-right.png"
+      alt=""
+      class="portfolio-line-right"
+    />
+  </div>
+  <div class="portfolio-header-text">
+    <span>
+      Explore a selection of my work here - Interact with projects to see my
+      skills in action.
+    </span>
+  </div>
+
+  <div class="projects-container">
+    <div *ngFor="let project of project" class="project-{{ project.sequence }}">
+      <img src="{{ project.image }}" alt="" />
+      <div
+        [ngStyle]="{
+          'align-items': project.sequence == 'regular' ? 'start' : 'end'
+        }"
+        [ngStyle]="{
+          'text-align': project.sequence == 'regular' ? 'start' : 'end'
+        }"
+        class="project-description"
+      >
+        <span>{{ project.title }}</span>
+        <span>{{ project.languages }}</span>
+        <span>{{ project.description }}</span>
+        <div>
+          <button>
+            <a href="{{ project.directLink }}">Live test</a>
+          </button>
+          <button>
+            <a href="{{ project.gitHubLink }}">Github</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
