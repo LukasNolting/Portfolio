@@ -7,8 +7,8 @@ export const portfolio: Portfolio[] = [
     languages: 'JavaScript | HTML | CSS | API',
     description:
       'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-    directLink: 'test',
-    gitHubLink: 'test',
+    directLink: '#',
+    gitHubLink: 'https://github.com/LukasNolting/JOIN',
     sequence: 'regular',
   },
   {
@@ -17,8 +17,8 @@ export const portfolio: Portfolio[] = [
     languages: 'JavaScript | HTML | CSS',
     description:
       'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-    directLink: 'test',
-    gitHubLink: 'test',
+    directLink: '#',
+    gitHubLink: 'https://github.com/LukasNolting/El-Polo-Loco',
     sequence: 'reverse',
   },
   {
@@ -27,8 +27,8 @@ export const portfolio: Portfolio[] = [
     languages: 'Angular | Firebase',
     description:
       'A very Simple Customer Relationship Management system working with CRUD functionality.',
-    directLink: 'test',
-    gitHubLink: 'test',
+    directLink: '#',
+    gitHubLink: 'https://github.com/LukasNolting/Simple-CRM',
     sequence: 'regular',
   },
   {
@@ -36,9 +36,9 @@ export const portfolio: Portfolio[] = [
     title: 'Pokédex',
     languages: 'JavaScript | HTML | CSS | API',
     description:
-      'A very Simple Customer Relationship Management system working with CRUD functionality.',
-    directLink: 'test',
-    gitHubLink: 'test',
+      'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+    directLink: '#',
+    gitHubLink: 'https://github.com/LukasNolting/pokedex',
     sequence: 'reverse',
   },
 ];

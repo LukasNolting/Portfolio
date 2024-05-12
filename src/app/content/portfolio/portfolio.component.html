@@ -31,16 +31,21 @@
         }"
         class="project-description"
       >
-        <span>{{ project.title }}</span>
-        <span>{{ project.languages }}</span>
-        <span>{{ project.description }}</span>
         <div>
-          <button>
-            <a href="{{ project.directLink }}">Live test</a>
-          </button>
-          <button>
-            <a href="{{ project.gitHubLink }}">Github</a>
-          </button>
+          <span>{{ project.title }}</span>
+          <span>{{ project.languages }}</span>
+          <span>{{ project.description }}</span>
+        </div>
+        <div
+          class="project-description-buttons"
+          [ngStyle]="{
+            'justify-content':
+              project.sequence == 'regular' ? 'flex-start' : 'flex-end'
+          }"
+        >
+          <a href="{{ project.directLink }}" target="_blank"><button>Live test</button></a>
+
+          <a href="{{ project.gitHubLink }}" target="_blank"><button>Github</button></a>
         </div>
       </div>
     </div>
