@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { IntroComponent } from './content/intro/intro.component';
 import { AboutMeComponent } from './content/about-me/about-me.component';
 import { SkillsComponent } from './content/skills/skills.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
 import { PortfolioComponent } from './content/portfolio/portfolio.component';
 import { ContactComponent } from './content/contact/contact.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { ContactComponent } from './content/contact/contact.component';
     SkillsComponent,
     NavigationComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
 })
 export class AppComponent {

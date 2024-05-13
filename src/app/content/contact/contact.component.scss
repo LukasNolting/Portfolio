@@ -1,0 +1,133 @@
+section {
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+.text-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.contact-container {
+  padding: 0 92px 180px;
+  display: flex;
+  gap: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-container-right {
+    width: calc(100% - 120px);
+}
+
+.contact-container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  input {
+    border-radius: 10px;
+    border: 1px solid #4b47ff;
+    padding: 15px 25px;
+    gap: 10px;
+    background-color: #141d2f;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+  textarea {
+    border-radius: 10px;
+    border: 1px solid #4b47ff;
+    padding: 15px 25px;
+    gap: 10px;
+    background-color: #141d2f;
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+    &::-webkit-resizer {
+      display: none;
+    }
+  }
+  button {
+    background-color: #b6b6b6;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27.6px;
+    cursor: pointer;
+    width: auto;
+    margin: auto;
+  }
+}
+
+.contact-container-right-privacy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    a {
+      color: #4b47ff;
+    }
+  }
+}
+
+.contact-checkbox {
+  background-image: url("../../../assets/img/contact/contact-checkbox-unchecked.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  display: block;
+  &:hover {
+    background-image: url("../../../assets/img/contact/contact-checkbox-unchecked-hover.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.contact-shadow-1 {
+  position: absolute;
+  left: -120px;
+  bottom: 0px;
+  height: 600px;
+}
