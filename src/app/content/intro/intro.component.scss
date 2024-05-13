@@ -85,7 +85,6 @@
     font-size: 23px;
     line-height: 27px;
     z-index: 3;
-    cursor: pointer;
   }
 }
 
@@ -176,4 +175,11 @@ img{
   display: flex;
   align-items: center;
   gap:42px;
-}
+    a {
+    width: 30px;
+    height: 30px;
+    &:hover {
+      transform-origin: center;
+      transform: scale(1.34);
+    }
+  }}

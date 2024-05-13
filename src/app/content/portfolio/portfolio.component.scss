@@ -1,5 +1,5 @@
 section {
-  padding: 150px 0px 150px 0px;
+  padding: 150px 0px 60px 0px;
   position: relative;
 }
 
@@ -120,12 +120,10 @@ h1 {
     font-weight: 400;
     font-size: 23px;
     line-height: 27.6px;
-    cursor: pointer;
     }
   }
 
   a:nth-child(2) {
-    cursor: pointer;
     button {
       border-radius: 10px;
       padding: 15px 30px;
@@ -137,7 +135,6 @@ h1 {
     font-weight: 400;
     font-size: 23px;
     line-height: 27.6px;
-    cursor: pointer;
     }
   }
 }

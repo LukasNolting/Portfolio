@@ -1,5 +1,6 @@
 section {
   position: relative;
+  padding-top: 90px;
 }
 
 h1 {
@@ -36,7 +37,7 @@ h2 {
 }
 
 .contact-container-right {
-    width: calc(100% - 120px);
+  width: calc(100% - 120px);
 }
 
 .contact-container-form {
@@ -83,7 +84,6 @@ h2 {
     font-weight: 400;
     font-size: 23px;
     line-height: 27.6px;
-    cursor: pointer;
     width: auto;
     margin: auto;
   }
@@ -111,7 +111,6 @@ h2 {
   background-position: center;
   height: 24px;
   width: 24px;
-  cursor: pointer;
   display: block;
   &:hover {
     background-image: url("../../../assets/img/contact/contact-checkbox-unchecked-hover.png");
@@ -120,7 +119,6 @@ h2 {
     background-position: center;
     height: 24px;
     width: 24px;
-    cursor: pointer;
     display: block;
   }
 }
@@ -130,4 +128,20 @@ h2 {
   left: -120px;
   bottom: 0px;
   height: 600px;
+}
+
+.contact-arrow {
+  background-image: url("../../../assets/img/contact/contact-arrow.png");
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  position: absolute;
+  bottom: 90px;
+  right: 100px;
+  width: 43px;
+  height: 43px;
+  &:hover {
+    background-image: url("../../../assets/img/contact/contact-arrow-hover.png");
+  }
 }
