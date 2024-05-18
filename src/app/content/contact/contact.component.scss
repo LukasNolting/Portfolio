@@ -120,6 +120,7 @@ h2 {
     height: 24px;
     width: 24px;
     display: block;
+    cursor: pointer;
   }
 }
 
@@ -143,5 +144,16 @@ h2 {
   height: 43px;
   &:hover {
     background-image: url("../../../assets/img/contact/contact-arrow-hover.png");
+  }
+}
+
+
+.textarea{
+  display: flex;
+  flex-direction: column;
+  span{
+    height: 20px;
+  
+  color: red;
   }
 }

@@ -21,8 +21,15 @@
 
   <div class="projects-container">
     <div *ngFor="let project of project" class="project-{{ project.sequence }}">
-      <img src="{{ project.image }}" alt="" />
+      <img
+        src="{{ project.image }}"
+        alt=""
+        data-aos="flip-left"
+        data-aos-duration="1500"
+      />
       <div
+        data-aos="flip-left"
+        data-aos-duration="1500"
         [ngStyle]="{
           'align-items': project.sequence == 'regular' ? 'start' : 'end'
         }"
@@ -53,7 +60,15 @@
         </div>
       </div>
     </div>
-    <img src="assets/img/portfolio/portfolio-shadow-1.png" alt="" class="shadow-1">
-    <img src="assets/img/portfolio/portfolio-shadow-2.png" alt="" class="shadow-2">
+    <img
+      src="assets/img/portfolio/portfolio-shadow-1.png"
+      alt=""
+      class="shadow-1"
+    />
+    <img
+      src="assets/img/portfolio/portfolio-shadow-2.png"
+      alt=""
+      class="shadow-2"
+    />
   </div>
 </section>

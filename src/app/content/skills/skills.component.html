@@ -1,9 +1,9 @@
 <section id="skills">
   <div class="skills">
     <div *ngFor="let skill of skills">
-      <div class="skill-box">
-        <img src="{{ skill.img }}" alt="" />
-        {{ skill.name }}
+      <div class="skill-box" data-aos="fade-right">
+        <img src="{{ skill.img }}" alt="" class="jump" />
+        <span>{{ skill.name }}</span>
       </div>
     </div>
   </div>

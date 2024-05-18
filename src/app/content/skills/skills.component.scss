@@ -29,6 +29,16 @@ section {
   }
 }
 
+@keyframes jump {
+0%   { transform: translateY(0); }
+        50%  { transform: translateY(-12px); }
+        100% { transform: translateY(0); }
+}
+.jump:hover {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate;
+}
+
 h1 {
   font-weight: 700;
   font-size: 90px;
@@ -51,6 +61,12 @@ h1 {
     font-size: 23px;
     line-height: 27px;
     z-index: 3;
+  }
+    button:hover {
+    background-color: #4b47ff;
+    transform-origin: center;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
   }
 }
 

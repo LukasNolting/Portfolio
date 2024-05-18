@@ -14,28 +14,54 @@
       <span> Need a Frontend developer? <b>Contact me!</b> </span>
     </div>
     <div class="contact-container-right">
-      <form action="" class="contact-container-form">
-        <input type="text" placeholder="Your name" />
-        <input type="text" placeholder="Your email" />
-        <textarea
+      <form class="contact-container-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input
+          [(ngModel)]="contactData.name"
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Your name"
+          required
+          #name="ngModel"
+        />
+        <input
+          [(ngModel)]="contactData.email"
+          name="email"
+          id="email"
+          type="text"
+          placeholder="Your email"
+          required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          #email="ngModel"
+        />
+        <div class="textarea"><textarea
+          [(ngModel)]="contactData.message"
           name="Your message"
           id="message"
           minlength="10"
           placeholder="Your message"
           autocomplete="off"
+          required
+          #message="ngModel"
         ></textarea>
+        <span> 
+          @if (!message.valid && message.touched) {
+          <span>Your message must be at least 10 characters long</span>
+        } </span>
+        
+        </div>
         <div class="contact-container-right-privacy">
-        <div class="contact-checkbox"></div>
-        <span
-          >I've read the
-          <a href="#">privacy policy</a>
-          and agree to the processing of my data as outlined.</span
-        >
+          <div class="contact-checkbox"></div>
+          <span
+            >I've read the
+            <a href="#">privacy policy</a>
+            and agree to the processing of my data as outlined.</span
+          >
         </div>
         <button>Send message :)</button>
       </form>
     </div>
   </div>
-  <img src="assets/img/contact/contact-shadow-1.png" class="contact-shadow-1">
+  <img src="assets/img/contact/contact-shadow-1.png" class="contact-shadow-1" />
   <a href="#navigation"><div class="contact-arrow"></div></a>
 </section>
