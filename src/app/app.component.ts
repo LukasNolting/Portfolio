@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { IntroComponent } from './content/intro/intro.component';
-import { AboutMeComponent } from './content/about-me/about-me.component';
-import { SkillsComponent } from './content/skills/skills.component';
+import { IntroComponent } from './main/intro/intro.component';
+import { AboutMeComponent } from './main/about-me/about-me.component';
+import { SkillsComponent } from './main/skills/skills.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
-import { PortfolioComponent } from './content/portfolio/portfolio.component';
-import { ContactComponent } from './content/contact/contact.component';
+import { PortfolioComponent } from './main/portfolio/portfolio.component';
+import { ContactComponent } from './main/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import AOS from 'aos';
 import { Inject, PLATFORM_ID } from '@angular/core';
@@ -26,7 +26,7 @@ import { ImprintComponent } from './imprint/imprint.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
   ],
 })
 export class AppComponent implements OnInit {
