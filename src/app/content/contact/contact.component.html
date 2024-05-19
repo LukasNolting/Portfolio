@@ -14,51 +14,164 @@
       <span> Need a Frontend developer? <b>Contact me!</b> </span>
     </div>
     <div class="contact-container-right">
-      <form class="contact-container-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input
-          [(ngModel)]="contactData.name"
-          name="name"
-          id="name"
-          type="text"
-          placeholder="Your name"
-          required
-          #name="ngModel"
-        />
-        <input
-          [(ngModel)]="contactData.email"
-          name="email"
-          id="email"
-          type="text"
-          placeholder="Your email"
-          required
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-          #email="ngModel"
-        />
-        <div class="textarea"><textarea
-          [(ngModel)]="contactData.message"
-          name="Your message"
-          id="message"
-          minlength="10"
-          placeholder="Your message"
-          autocomplete="off"
-          required
-          #message="ngModel"
-        ></textarea>
-        <span> 
-          @if (!message.valid && message.touched) {
-          <span>Your message must be at least 10 characters long</span>
-        } </span>
-        
+      <form class="contact-container-form" #contactForm="ngForm" return false>
+        <div class="contact-container-input-fields">
+          <input
+            [(ngModel)]="contactData.name"
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Your name"
+            minlength="4"
+            required
+            #name="ngModel"
+            [ngStyle]="{
+              'border-color':
+                !name.valid && (name.touched || name.dirty)
+                  ? 'red'
+                  : name.valid && (name.touched || name.dirty)
+                  ? 'green'
+                  : '#4b47ff'
+            }"
+          />
+          <span class="validation-container">
+            <img
+              *ngIf="!name.valid && name.touched"
+              src="assets/img/contact/invalid.svg"
+              alt=""
+              class="validation-icons"
+            />
+            <img
+              *ngIf="name.valid && name.touched"
+              src="assets/img/contact/valid.svg"
+              alt=""
+              class="validation-icons"
+            />
+          </span>
+
+          <p>
+            @if (!name.valid && name.touched) {
+            <span class="validation">Please enter a valid name</span>
+            }
+          </p>
+        </div>
+
+        <div class="contact-container-input-fields">
+          <input
+            [(ngModel)]="contactData.email"
+            name="email"
+            id="email"
+            type="text"
+            placeholder="Your email"
+            required
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            minlength="8"
+            #email="ngModel"
+            [ngStyle]="{
+              'border-color':
+                !email.valid && (email.touched || email.dirty)
+                  ? 'red'
+                  : email.valid && (email.touched || email.dirty)
+                  ? 'green'
+                  : '#4b47ff'
+            }"
+          />
+          <span class="validation-container">
+            <img
+              *ngIf="!email.valid && email.touched"
+              src="assets/img/contact/invalid.svg"
+              alt=""
+              class="validation-icons"
+            />
+            <img
+              *ngIf="email.valid && email.touched"
+              src="assets/img/contact/valid.svg"
+              alt=""
+              class="validation-icons"
+            />
+          </span>
+          <p>
+            @if (!email.valid && email.touched) {
+            <span class="validation">Please enter a valid email</span>
+            }
+          </p>
+        </div>
+
+        <div class="contact-container-input-fields">
+          <textarea
+            [(ngModel)]="contactData.message"
+            name="Your message"
+            id="message"
+            minlength="10"
+            placeholder="Your message"
+            autocomplete="off"
+            required
+            #message="ngModel"
+            [ngStyle]="{
+              'border-color':
+                !message.valid && (message.touched || message.dirty)
+                  ? 'red'
+                  : message.valid && (message.touched || message.dirty)
+                  ? 'green'
+                  : '#4b47ff'
+            }"
+          ></textarea>
+          <span class="validation-container">
+            <img
+              *ngIf="!message.valid && message.touched"
+              src="assets/img/contact/invalid.svg"
+              alt=""
+              class="validation-icons"
+            />
+            <img
+              *ngIf="message.valid && message.touched"
+              src="assets/img/contact/valid.svg"
+              alt=""
+              class="validation-icons"
+            />
+          </span>
+          <p>
+            @if (!message.valid && message.touched) {
+            <span class="validation"
+              >Your message must be at least 10 characters long</span
+            >
+            }
+          </p>
         </div>
         <div class="contact-container-right-privacy">
-          <div class="contact-checkbox"></div>
-          <span
-            >I've read the
-            <a href="#">privacy policy</a>
-            and agree to the processing of my data as outlined.</span
-          >
+          <input
+            type="checkbox"
+            [(ngModel)]="contactData.privacy"
+            name="privacy"
+            id="Ford"
+            required
+            #privacy="ngModel"
+          />
+          <!-- <p>
+            @if (!privacy.valid) {
+            <span class="validation"
+              >Please accept the privacy policy</span
+            >
+            }
+          </p> -->
+          <div>
+            <span
+              >I've read the
+              <a href="#">privacy policy</a>
+              and agree to the processing of my data as outlined.</span
+            >
+          </div>
         </div>
-        <button>Send message :)</button>
+
+        <button
+          [disabled]="contactForm.invalid"
+          (click)="onSubmit(contactForm)"
+          [ngStyle]="{
+            'background-color': (contactForm.valid) ? '#00bee8' : 'grey',
+          }"
+        >
+          Send message :)
+        </button>
       </form>
     </div>
   </div>

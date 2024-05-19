@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -16,8 +17,8 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    privacy: false
   };
-  mailTest = false;
 
   post = {
     endPoint: 'https://lukas-nolting.de/sendMail.php',
@@ -31,11 +32,12 @@ export class ContactComponent {
   };
 
   async onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.form.valid) {
       let payload = {
         email: this.contactData.email,
         message: this.contactData.message,
         name: this.contactData.name,
+        privacy: this.contactData.privacy
       };
       console.log(payload);
 
@@ -52,12 +54,10 @@ export class ContactComponent {
             console.info('send post complete');
             setTimeout(() => {
               console.log('complete');
-              
             }, 1000);
           },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
+    ngForm.resetForm();
   }
 }

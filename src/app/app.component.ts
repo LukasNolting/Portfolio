@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import AOS from 'aos';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { isPlatformBrowser } from '@angular/common';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
+    ImprintComponent
   ],
 })
 export class AppComponent implements OnInit {
