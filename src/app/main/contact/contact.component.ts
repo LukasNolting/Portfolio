@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -11,13 +12,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(private router: Router) {}
   http = inject(HttpClient);
 
   contactData = {
     name: '',
     email: '',
     message: '',
-    privacy: false
+    privacy: false,
   };
 
   post = {
@@ -37,7 +39,7 @@ export class ContactComponent {
         email: this.contactData.email,
         message: this.contactData.message,
         name: this.contactData.name,
-        privacy: this.contactData.privacy
+        privacy: this.contactData.privacy,
       };
       console.log(payload);
 
@@ -59,5 +61,11 @@ export class ContactComponent {
         });
     }
     ngForm.resetForm();
+  }
+
+  navigateToPrivacy() {
+    this.router.navigateByUrl('/privacy').then(() => {
+      window.scrollTo(0, 0);
+    });
   }
 }
