@@ -24,6 +24,9 @@ export class NavigationComponent {
   clickEvent() {
     this.status = !this.status;
   }
+  clickEventLogo() {
+    this.status = false;
+  }
   navigateToPrivacy() {
     this.router.navigateByUrl('/privacy').then(() => {
       window.scrollTo(0, 0);

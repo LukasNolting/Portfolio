@@ -147,26 +147,16 @@
             required
             #privacy="ngModel"
           />
-          <!-- <p>
-            @if (!privacy.valid) {
-            <span class="validation"
-              >Please accept the privacy policy</span
+          <span
+            >I've read the
+            <a
+              routerLink="imprint"
+              target="_blank"
+              (click)="navigateToPrivacy()"
+              >privacy policy</a
             >
-            }
-          </p> -->
-  
-            <span
-              >I've read the
-              <a
-                routerLink="imprint"
-                target="_blank"
-                (click)="navigateToPrivacy()"
-                >privacy policy</a
-              >
-              and agree to the processing of my data as outlined.</span
-            >
-            
-    
+            and agree to the processing of my data as outlined.</span
+          >
         </div>
 
         <button

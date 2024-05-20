@@ -1,3 +1,10 @@
+.navigation-top {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
 .header {
   background-color: #141d2f;
   display: flex;
@@ -21,7 +28,7 @@
   }
 }
 
-.d-none{
+.d-none {
   display: none;
 }
 
@@ -71,7 +78,7 @@
     top: 120px;
     left: 0;
     z-index: 999;
-    
+
     ul {
       display: flex;
       flex-direction: column;
@@ -80,34 +87,23 @@
     }
   }
 
-.slide-in {
+  .slide-in {
     transform: translateX(0);
-    transition: transform .5s ease, opacity ease .2s;
+    transition: transform 0.5s ease, opacity ease 0.2s;
     opacity: 1;
     height: 100vh;
-}
+  }
 
-html {
-  top: 0;
-    left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  position: absolute !important;
-  overflow-x: hidden !important;
-}
-
-.slide-out {
+  .slide-out {
     transform: translateX(100vw);
     opacity: 0;
-    transition: transform .5s ease, opacity ease .2s;
+    transition: transform 0.5s ease, opacity ease 0.2s;
     height: 100vh;
-}
+  }
 
-// Eine Zwischenklasse, die das Element wieder sichtbar macht, bevor es die Klasse slide-in erhält
-.slide-pre-in {
-    display: block;  // Element sichtbar machen
-}
-
+  .slide-pre-in {
+    display: block;
+  }
 
   .content {
     display: flex !important;
@@ -119,7 +115,7 @@ html {
     text-align: center;
     padding-right: 50px;
     height: 40px;
-    
+    cursor: pointer;
   }
 
   .burger {
@@ -129,7 +125,6 @@ html {
     top: 2rem;
     z-index: 20;
     display: block;
-    
   }
 
   .burger span {
@@ -177,17 +172,21 @@ html {
     display: none;
   }
 
-  ul{padding: 0 !important;}
+  ul {
+    padding: 0 !important;
+  }
 
-  .header{
-    img{
+  .header {
+    img {
       padding: 37px 0 37px 30px !important;
-    };
-    ul{
+    }
+    ul {
       gap: 45px;
+      padding-top: 30px !important;
     }
   }
 
-
-
+  app-navigation {
+    overflow-x: hidden;
+  }
 }

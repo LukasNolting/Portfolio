@@ -1,6 +1,7 @@
 .section-intro {
   height: calc(100vh - 77px);
   background-color: #141d2f;
+  padding-top: 150px;
 }
 
 .container-intro {
@@ -20,16 +21,19 @@
 
 .character {
   position: relative;
+  overflow: visible;
   img:nth-child(1) {
     width: 600px;
     height: auto;
     position: absolute;
     z-index: 1;
     bottom: 0px;
+    overflow: visible;
   }
   img:nth-child(2) {
     width: 600px;
     height: auto;
+    rotate: 270deg;
   }
 }
 
@@ -189,3 +193,110 @@ img {
     }
   }
 }
+
+@media (max-width: 1400px) {
+  .descr {
+    span:nth-child(1) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  .name {
+    span:nth-child(1) {
+      font-size: 56px;
+      line-height: 80px;
+    }
+    span:nth-child(2) {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media (max-width: 1255px) {
+  .container-intro {
+    padding-top: 90px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    img:nth-child(1) {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      z-index: 2;
+      bottom: -175px;
+    }
+  }
+
+  .section-intro{
+    padding-top: 100px;
+  }
+
+  .character {
+    position: relative;
+    padding-left: 30px;
+    img:nth-child(1) {
+      width: 500px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+    }
+    img:nth-child(2) {
+      width: 500px;
+    }
+  }
+
+  .descr {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1195px) {
+  .container-intro {
+    flex-direction: column;
+    padding-top: 0;
+    gap: 50px;
+  }
+
+  .descr {
+    padding: 0;
+  }
+
+  .wave-img {
+    bottom: 187px !important;
+    height: 105px !important;
+  }
+
+  .character {
+    bottom: -30px;
+    padding-left: 0;
+  }
+
+  .intro-contact{
+    a:nth-child(5){
+      display: none;
+    }
+    padding-bottom: 20px;
+  }
+  .intro-scroll-img{
+    display: none;
+  }
+
+
+  .descr {
+ &span:nth-child(1) {
+  line-height: 20px;
+  }
+}
+
+.intro{
+  gap:35px;
+}
+
+.section-intro{
+  height: auto;
+}
+}
+
+@media (max-width: 1195px) {}
