@@ -11,6 +11,9 @@ import AOS from 'aos';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ImprintComponent } from './imprint/imprint.component';
+import { Router, RouterLink } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-root',
@@ -27,15 +30,20 @@ import { ImprintComponent } from './imprint/imprint.component';
     ContactComponent,
     FooterComponent,
     ImprintComponent,
+    RouterLink,
   ],
 })
 export class AppComponent implements OnInit {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router
+  ) {}
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init();
     }
   }
   title = 'Portfolio';
+
+
 }
