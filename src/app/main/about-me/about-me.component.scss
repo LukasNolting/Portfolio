@@ -54,16 +54,75 @@ h1 {
   }
 }
 
-.character-container{
-    display: flex;
-    align-items: center;
-    img:nth-child(1){
-        border-radius: 50%;
-        border: 4px solid #1CDAE6;
-        width: 450px;
-    }
-    img:nth-child(2){
-        width: 350px;
-    }
+.character-container {
+  display: flex;
+  align-items: center;
+  img:nth-child(1) {
+    border-radius: 50%;
+    border: 4px solid #1cdae6;
+    width: 25vw;
+  }
+  img:nth-child(2) {
+    width: 15vw;
+  }
 }
 
+@media (max-width: 1500px) {
+  h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 108px;
+  }
+
+  section {
+    padding: 150px 0 100px 100px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .character-container {
+    display: none;
+  }
+
+  section {
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .shadow-about {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 560px) {
+  section {
+    padding: 50px 50px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .about-bulb {
+    gap: 20px;
+  }
+  .about-puzzle {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+  }
+}
