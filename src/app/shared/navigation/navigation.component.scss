@@ -1,7 +1,7 @@
 .navigation-top {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
 }
 
@@ -113,7 +113,7 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
-    padding-right: 50px;
+    padding-right: 25px;
     height: 40px;
     cursor: pointer;
   }
@@ -178,7 +178,7 @@
 
   .header {
     img {
-      padding: 37px 0 37px 30px !important;
+      padding: 20px 0 20px 30px !important;
     }
     ul {
       gap: 45px;

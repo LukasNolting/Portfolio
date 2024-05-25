@@ -20,6 +20,24 @@ button {
   cursor: pointer;
 }
 
+
+$backgroundColor: #141d2f;
+$blueText: #00bee8;
+$purple: #4b47ff;
+$textColor: #ffffff;
+$error: #e61c40;
+$accepted: #70e61c;
+
+@mixin dFlex($jc: center, $ai: center, $g: 0px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
+
+
+
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #4a47ff5e;

@@ -52,6 +52,7 @@ h1 {
   justify-content: space-around;
   flex: 1;
   width: 100%;
+  padding: 0 100px;
   button {
     background-color: #00bee8;
     border: none;
@@ -73,16 +74,17 @@ h1 {
 
 .my-skills-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 60px;
 }
 
 .my-skills-text{
   display: flex;
-  text-align: end;
+  text-align: center;
   justify-content: center;
-  padding: 0 230px;
 }
 
 .placeholder{
