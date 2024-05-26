@@ -1,10 +1,17 @@
-section {
+
+section{
+  display: flex;
+  justify-content: center;
+}
+
+
+.section-skills {
   position: relative;
-  padding-left: 100px;
   display: flex;
   justify-content: space-evenly;
   padding-top: 150px;
-
+  max-width: 1920px;
+  width: 100%;
 }
 
 .skills{
@@ -96,9 +103,7 @@ h1 {
   position: absolute;
   width: auto;
   height: 800px;
-  bottom: -300px;
   left: 0;
-  z-index: 0;
 }
 
 @media (max-width: 1370px) {
@@ -112,7 +117,7 @@ h1 {
 }
 @media (max-width: 1275px) {
 
-section{
+.section-skills{
   flex-direction: column-reverse;
   align-items: center;
   gap: 110px;
@@ -163,7 +168,7 @@ section{
     height: 100%;
     gap: 40px;
   }
-  section{
+  .section-skills{
     gap: 80px;
     padding-top: 50px !important;
   }

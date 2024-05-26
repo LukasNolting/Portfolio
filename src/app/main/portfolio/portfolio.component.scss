@@ -1,6 +1,16 @@
-section {
-  padding-top: 150px;
+
+
+section{
+  display: flex;
+  justify-content: center;
   position: relative;
+}
+
+
+.section-portfolio {
+  padding-top: 150px;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .portfolio-line-left {
@@ -10,7 +20,7 @@ section {
 }
 
 .portfolio-line-right {
-  width: 700px;
+  width: auto;
   height: 4px;
 }
 
@@ -51,7 +61,8 @@ h1 {
 .shadow-1 {
   position: absolute;
   height: 800px;
-  top: 1000px;
+  width: auto;
+  top: 850px;
   left: 0px;
 }
 
@@ -59,7 +70,6 @@ h1 {
   position: absolute;
   height: auto;
   width: 300px;
-  bottom: -280px;
   right: 0px;
 }
 
@@ -198,7 +208,7 @@ h1 {
     width: 100%;
   }
 
-  section{
+  .section-portfolio{
     padding: 50px 0 0 0;
   }
 

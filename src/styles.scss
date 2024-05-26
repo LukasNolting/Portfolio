@@ -8,6 +8,12 @@
 body {
   background-color: #141d2f;
   overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html{
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 a {
@@ -21,25 +27,25 @@ button {
 }
 
 
-$backgroundColor: #141d2f;
-$blueText: #00bee8;
-$purple: #4b47ff;
-$textColor: #ffffff;
-$error: #e61c40;
-$accepted: #70e61c;
+// $backgroundColor: #141d2f;
+// $blueText: #00bee8;
+// $purple: #4b47ff;
+// $textColor: #ffffff;
+// $error: #e61c40;
+// $accepted: #70e61c;
 
-@mixin dFlex($jc: center, $ai: center, $g: 0px) {
-  display: flex;
-  justify-content: $jc;
-  align-items: $ai;
-  gap: $g;
-}
+// @mixin dFlex($jc: center, $ai: center, $g: 0px) {
+//   display: flex;
+//   justify-content: $jc;
+//   align-items: $ai;
+//   gap: $g;
+// }
 
 
 
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
   background-color: #4a47ff5e;
 }
 

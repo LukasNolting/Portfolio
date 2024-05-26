@@ -1,20 +1,44 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
 .section-intro {
   background-color: #141d2f;
   display: flex;
   flex-direction: column;
   padding-top: 90px;
-  height: calc(100vh - 100px);
+  max-width: 1920px;
+  width: 100%;
+  // height: calc(100vh - 100px);
 }
 
 .container-intro {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
   padding-top: 150px;
   position: relative;
   z-index: 30;
 }
+
+.line{
+  position: relative;
+  width: 100px;
+  .coloredLineLeft{
+      position: absolute;
+      right: 0px;
+      height: 0px;
+      width: 5000px;
+      border: #ff0000 solid 4px;
+  }
+  .coloredLineRight{
+    position: absolute;
+    left: 50px;
+    height: 0px;
+    width: 5000px;
+    border: #ff0000 solid 4px;
+}}
 
 .character {
   position: relative;
@@ -221,9 +245,8 @@ img {
       width: 400px;
       height: 400px;
     }
-  
-
-}}
+  }
+}
 
 @media (max-width: 1020px) {
   .container-intro {
@@ -291,7 +314,6 @@ img {
   }
 }
 
-
 @media (max-width: 450px) {
   .descr-iam {
     font-size: 20px;
@@ -303,11 +325,11 @@ img {
   .name span:nth-child(2) {
     font-size: 25px;
   }
-  .section-intro{
+  .section-intro {
     padding-top: 50px;
     height: calc(100vh - 50px);
   }
-  .intro-line-img{
+  .intro-line-img {
     width: 50px !important;
   }
   .character {
@@ -322,10 +344,10 @@ img {
       height: 320px;
     }
   }
-    .intro-line{
+  .intro-line {
     flex: 0;
   }
-  .section-intro{
+  .section-intro {
     justify-content: space-around;
   }
 }
@@ -346,15 +368,14 @@ img {
 }
 
 @media (max-width: 900px) and (max-height: 900px) {
-  .intro{
-    gap:0 !important;
+  .intro {
+    gap: 0 !important;
   }
-  .intro-contact{
+  .intro-contact {
     padding: 0;
   }
-  .container-intro{
-    gap:10px;
+  .container-intro {
+    gap: 10px;
     padding-top: 0;
   }
-
 }
