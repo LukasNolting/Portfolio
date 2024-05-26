@@ -3,6 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 999;
+  border-bottom: 4px solid #00bee8;
 }
 
 .header {
@@ -75,7 +76,7 @@
     box-sizing: border-box;
     width: 100vw;
     overflow: hidden;
-    top: 40px;
+    top: 51px;
     left: 0;
     z-index: 999;
 
@@ -86,12 +87,6 @@
       align-items: center;
     }
   }
-
-  .header[_ngcontent-ng-c3546941311] img[_ngcontent-ng-c3546941311] {
-        padding: 10px 0px 10px 30px !important;
-        height: 20px;
-        width: auto;
-    }
 
   .slide-in {
     transform: translateX(0);
@@ -184,7 +179,9 @@
 
   .header {
     img {
-      padding: 20px 0 20px 30px !important;
+      padding: 10px 0px 0px 30px !important;
+      height: 30px;
+      width: auto;
     }
     ul {
       gap: 45px;

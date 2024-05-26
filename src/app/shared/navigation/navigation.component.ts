@@ -10,7 +10,6 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
-
   isImprintPage: boolean = false;
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
@@ -34,6 +33,11 @@ export class NavigationComponent {
   }
   navigateToImprint() {
     this.router.navigateByUrl('/imprint').then(() => {
+      window.scrollTo(0, 0);
+    });
+  }
+  navigateToHome() {
+    this.router.navigateByUrl('/').then(() => {
       window.scrollTo(0, 0);
     });
   }

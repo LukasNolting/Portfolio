@@ -18,7 +18,7 @@ bootstrapApplication(AppComponent, appConfig)
           if (targetElement) {
             const targetPosition =
               targetElement.getBoundingClientRect().top + window.pageYOffset;
-            const offsetPosition = targetPosition - 0; // 100px weiter oben
+            const offsetPosition = targetPosition - 20; // 100px weiter oben
 
             window.scrollTo({
               top: offsetPosition,
