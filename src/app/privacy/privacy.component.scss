@@ -6,3 +6,24 @@
         text-decoration: underline;
     }
 }
+
+.contact-arrow {
+  background-image: url("../../assets/img/contact/contact-arrow.png");
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  position: relative;
+  width: 43px;
+  height: 43px;
+  top: 20px;
+  &:hover {
+    background-image: url("../../assets/img/contact/contact-arrow-hover.png");
+  }
+}
+
+@media (max-width: 660px) {
+    .privacy{
+    padding: 100px 20px;
+    }
+}

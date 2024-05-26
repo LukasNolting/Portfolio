@@ -75,7 +75,7 @@
     box-sizing: border-box;
     width: 100vw;
     overflow: hidden;
-    top: 120px;
+    top: 40px;
     left: 0;
     z-index: 999;
 
@@ -86,6 +86,12 @@
       align-items: center;
     }
   }
+
+  .header[_ngcontent-ng-c3546941311] img[_ngcontent-ng-c3546941311] {
+        padding: 10px 0px 10px 30px !important;
+        height: 20px;
+        width: auto;
+    }
 
   .slide-in {
     transform: translateX(0);

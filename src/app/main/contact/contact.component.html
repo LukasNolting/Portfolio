@@ -164,6 +164,7 @@
           (click)="onSubmit(contactForm)"
           [ngStyle]="{
             'background-color': (contactForm.valid) ? '#00bee8' : 'grey',
+            'cursor': (contactForm.valid) ? 'pointer' : 'not-allowed'
           }"
         >
           Send message :)
@@ -171,6 +172,6 @@
       </form>
     </div>
   </div>
+  <a href="#intro"><div class="contact-arrow"></div></a>
   <img src="assets/img/contact/contact-shadow-1.png" class="contact-shadow-1" />
-  <a href="#navigation"><div class="contact-arrow"></div></a>
 </section>

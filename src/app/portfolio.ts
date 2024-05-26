@@ -12,7 +12,7 @@ export const portfolio: Portfolio[] = [
     sequence: 'regular',
   },
   {
-    image: 'assets/img/portfolio/join.png',
+    image: 'assets/img/portfolio/el-pollo-loco.png',
     title: 'El Polo Loco',
     languages: 'JavaScript | HTML | CSS',
     description:
@@ -22,7 +22,7 @@ export const portfolio: Portfolio[] = [
     sequence: 'reverse',
   },
   {
-    image: 'assets/img/portfolio/join.png',
+    image: 'assets/img/portfolio/simple-crm.png',
     title: 'Simple CRM',
     languages: 'Angular | Firebase',
     description:
@@ -30,15 +30,5 @@ export const portfolio: Portfolio[] = [
     directLink: '#',
     gitHubLink: 'https://github.com/LukasNolting/Simple-CRM',
     sequence: 'regular',
-  },
-  {
-    image: 'assets/img/portfolio/join.png',
-    title: 'Pokédex',
-    languages: 'JavaScript | HTML | CSS | API',
-    description:
-      'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-    directLink: '#',
-    gitHubLink: 'https://github.com/LukasNolting/pokedex',
-    sequence: 'reverse',
   },
 ];

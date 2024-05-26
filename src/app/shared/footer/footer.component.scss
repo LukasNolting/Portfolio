@@ -45,7 +45,6 @@ section {
   }
 }
 
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -53,14 +52,14 @@ section {
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4B47FF;
+  background-color: #4b47ff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -70,5 +69,32 @@ section {
   transform-origin: bottom left;
 }
 .hover-underline-animation:hover {
-    color: #00BEE8;
+  color: #00bee8;
+}
+
+@media (max-width: 850px) {
+  .footer-container {
+    padding: 37px 50px 37px 50px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-container-left{
+    display: none;
+    
+  }
+  .footer-container{
+    justify-content: center;
+    padding: 0 0;
+    height: 150px;
+  }
 }

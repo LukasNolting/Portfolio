@@ -1,5 +1,5 @@
 section {
-  padding: 150px 0px 60px 0px;
+  padding-top: 150px;
   position: relative;
 }
 
@@ -12,6 +12,10 @@ section {
 .portfolio-line-right {
   width: 700px;
   height: 4px;
+}
+
+.project-image{
+  height: 500px;
 }
 
 h1 {
@@ -41,8 +45,7 @@ h1 {
 .projects-container {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  gap: 100px;
+  margin-top: 80px;
 }
 
 .shadow-1 {
@@ -139,6 +142,132 @@ h1 {
     }
     button:hover {
       background-color: #00bee8;
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .shadow-1 {
+    height: 30vh;
+    top: 700px;
+  }
+  .shadow-2 {
+    height: 30vh;
+    bottom: 250px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-regular {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .project-reverse {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .projects-container {
+    margin-top: 50px;
+  }
+
+  .project-description {
+    width: 400px;
+    align-items: center;
+
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .project-image {
+    margin: auto;
+  }
+  .project-overview {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .portfolio-line-right {
+    width: 100%;
+  }
+
+  section{
+    padding: 50px 0 0 0;
+  }
+
+  .portfolio-header-text {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .portfolio-header {
+    gap: 0px;
+  }
+
+  .project-image {
+    margin: auto;
+    width: auto;
+    height: 350px;
+  }
+  .project-regular {
+    gap: 30px;
+  }
+  .project-reverse {
+    gap: 30px;
+  }
+  .portfolio-line-left {
+    width: 60px;
+  }
+  .portfolio-line-right {
+    width: 60px;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-image {
+    height: 400px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+
+  .project-description{
+    width: 310px;
+  }
+  .project-description-buttons{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+.portfolio-line-right{
+  display: none !important;
+}
+.portfolio-line-left{
+  display: none !important;
+}
+.portfolio-header{
+  justify-content: center;
+}
+}
+
+@media (max-width: 430px) {
+  .project-image {
+    height: 300px;
+  }
+  button{
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+  }
+  .project-description{
+    span:nth-child(3){
+      padding: 0 10px;
     }
   }
 }

@@ -3,14 +3,13 @@
   display: flex;
   flex-direction: column;
   padding-top: 150px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 160px);
 }
 
 .container-intro {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
   width: 100%;
   padding-top: 150px;
   position: relative;
@@ -21,8 +20,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   border: 4px solid #1cdae6;
   display: flex;
@@ -30,15 +29,15 @@
   align-items: center;
   img:nth-child(1) {
     width: auto;
-    height: 400px;
+    height: 500px;
     position: absolute;
     z-index: 1;
     bottom: 0px;
     overflow: hidden;
   }
   img:nth-child(2) {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     rotate: -90deg;
     position: absolute;
     overflow: hidden;
@@ -203,7 +202,6 @@ img {
       transform: scale(1.34);
     }
   }
-  padding-bottom: 20px;
 }
 
 .hover-underline-animation {
@@ -238,9 +236,7 @@ img {
   .container-intro {
     gap: 20px;
   }
-}
 
-@media (max-width: 1370px) {
   .descr-iam {
     font-size: 50px;
   }
@@ -250,7 +246,21 @@ img {
   .name span:nth-child(2) {
     font-size: 45px;
   }
-}
+
+  .character {
+    height: 400px;
+    width: 400px;
+
+    img:nth-child(1) {
+      height: 400px;
+    }
+    img:nth-child(2) {
+      width: 400px;
+      height: 400px;
+    }
+  
+
+}}
 
 @media (max-width: 1020px) {
   .container-intro {
@@ -302,35 +312,8 @@ img {
   .name span:nth-child(2) {
     font-size: 30px;
   }
-  // .intro-contact{
-  //   align-items: center;
-  // }
 }
-@media (max-width: 450px) {
-  .descr-iam {
-    font-size: 30px;
-  }
-  .name span:nth-child(1) {
-    font-size: 50px;
-    line-height: 55px;
-  }
-  .name span:nth-child(2) {
-    font-size: 30px;
-  }
 
-  .character {
-    height: 320px;
-    width: 320px;
-
-    img:nth-child(1) {
-      height: 320px;
-    }
-    img:nth-child(2) {
-      width: 320px;
-      height: 320px;
-    }
-  }
-}
 
 @media (max-width: 450px) {
   .descr-iam {
@@ -350,10 +333,19 @@ img {
   .intro-line-img{
     width: 50px !important;
   }
-}
+  .character {
+    height: 320px;
+    width: 320px;
 
-@media (max-width: 450px) {
-  .intro-line{
+    img:nth-child(1) {
+      height: 320px;
+    }
+    img:nth-child(2) {
+      width: 320px;
+      height: 320px;
+    }
+  }
+    .intro-line{
     flex: 0;
   }
   .section-intro{
