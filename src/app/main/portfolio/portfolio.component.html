@@ -1,78 +1,70 @@
-
-<img
-  src="assets/img/portfolio/portfolio-shadow-1.png"
-  alt=""
-  class="shadow-1"
-/>
-<img
-  src="assets/img/portfolio/portfolio-shadow-2.png"
-  alt=""
-  class="shadow-2"
-/>
 <section>
   <div class="section-portfolio">
-  <div class="portfolio-header">
-    <div class="portfolio-line-left">
-      <img src="assets/img/portfolio/portfolio-line-left.png" alt="" />
+    <div class="portfolio-header">
+      
+            <div class="line-left">
+        <div class="coloredLineLeft"></div>
+      </div>
+      
+
+      <h1>Portfolio</h1>
+
+      <div class="line">
+        <div class="coloredLineLeft"></div>
+      </div>
+    </div>
+    <div class="portfolio-header-text">
+      <span>
+        Explore a selection of my work here - Interact with projects to see my
+        skills in action.
+      </span>
     </div>
 
-    <h1>Portfolio</h1>
-
-    <img
-      src="assets/img/portfolio/portfolio-line-right.png"
-      alt=""
-      class="portfolio-line-right"
-    />
-  </div>
-  <div class="portfolio-header-text">
-    <span>
-      Explore a selection of my work here - Interact with projects to see my
-      skills in action.
-    </span>
-  </div>
-
-  <div class="projects-container">
-    <div *ngFor="let project of project" class="project-{{ project.sequence }}">
-      <img
-        src="{{ project.image }}"
-        alt=""
-        data-aos="flip-left"
-        data-aos-duration="1500"
-        class="project-image"
-      />
+    <div class="projects-container">
       <div
-        data-aos="flip-left"
-        data-aos-duration="1500"
-        [ngStyle]="{
-          'align-items': project.sequence == 'regular' ? 'start' : 'end'
-        }"
-        [ngStyle]="{
-          'text-align': project.sequence == 'regular' ? 'start' : 'end'
-        }"
-        class="project-description"
+        *ngFor="let project of project"
+        class="project-{{ project.sequence }}"
       >
-        <div class="project-overview">
-          <span>{{ project.title }}</span>
-          <span>{{ project.languages }}</span>
-          <span>{{ project.description }}</span>
-        </div>
+        <img
+          src="{{ project.image }}"
+          alt=""
+          data-aos="flip-left"
+          data-aos-duration="1500"
+          class="project-image"
+        />
         <div
-          class="project-description-buttons"
+          data-aos="flip-left"
+          data-aos-duration="1500"
           [ngStyle]="{
-            'justify-content':
-              project.sequence == 'regular' ? 'flex-start' : 'flex-end'
+            'align-items': project.sequence == 'regular' ? 'start' : 'end'
           }"
+          [ngStyle]="{
+            'text-align': project.sequence == 'regular' ? 'start' : 'end'
+          }"
+          class="project-description"
         >
-          <a href="{{ project.directLink }}" target="_blank"
-            ><button>Live test</button></a
+          <div class="project-overview">
+            <span>{{ project.title }}</span>
+            <span>{{ project.languages }}</span>
+            <span>{{ project.description }}</span>
+          </div>
+          <div
+            class="project-description-buttons"
+            [ngStyle]="{
+              'justify-content':
+                project.sequence == 'regular' ? 'flex-start' : 'flex-end'
+            }"
           >
+            <a href="{{ project.directLink }}" target="_blank"
+              ><button>Live test</button></a
+            >
 
-          <a href="{{ project.gitHubLink }}" target="_blank"
-            ><button>Github</button></a
-          >
+            <a href="{{ project.gitHubLink }}" target="_blank"
+              ><button>Github</button></a
+            >
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>

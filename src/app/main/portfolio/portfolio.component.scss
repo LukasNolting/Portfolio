@@ -1,11 +1,8 @@
-
-
-section{
+section {
   display: flex;
   justify-content: center;
   position: relative;
 }
-
 
 .section-portfolio {
   padding-top: 150px;
@@ -13,19 +10,46 @@ section{
   width: 100%;
 }
 
-.portfolio-line-left {
-  display: flex;
-  justify-content: flex-end;
-  width: 700px;
+.line {
+  position: relative;
+  .coloredLineLeft {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    width: 5000px;
+    border: #4b47ff solid 2px;
+    border-radius: 2px 0px 0px 2px;
+  }
+  .coloredLineRight {
+    position: absolute;
+    right: 50px;
+    height: 0px;
+    width: 5000px;
+    border: #4b47ff solid 4px;
+  }
 }
 
-.portfolio-line-right {
-  width: auto;
-  height: 4px;
+.line-left {
+  position: relative;
+  .coloredLineLeft {
+    position: absolute;
+    right: 0px;
+    height: 0px;
+    width: 50px;
+    border: #4b47ff solid 2px;
+    border-radius: 2px 0px 0px 2px;
+  }
+  .coloredLineRight {
+    position: absolute;
+    left: 50px;
+    height: 0px;
+    width: 50px;
+    border: #4b47ff solid 4px;
+  }
 }
 
-.project-image{
-  height: 500px;
+.project-image {
+  height: 400px;
 }
 
 h1 {
@@ -37,8 +61,8 @@ h1 {
 .portfolio-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
+  justify-content: center;
 }
 
 .portfolio-header-text {
@@ -90,8 +114,9 @@ h1 {
 .project-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 500px;
+  gap: 50px;
   div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -185,6 +210,7 @@ h1 {
   }
   .projects-container {
     margin-top: 50px;
+    gap: 50px;
   }
 
   .project-description {
@@ -208,28 +234,15 @@ h1 {
     width: 100%;
   }
 
-  .section-portfolio{
-    padding: 50px 0 0 0;
-  }
-
   .portfolio-header-text {
     padding: 0 30px;
     text-align: center;
-  }
-  .portfolio-header {
-    gap: 0px;
   }
 
   .project-image {
     margin: auto;
     width: auto;
-    height: 350px;
-  }
-  .project-regular {
-    gap: 30px;
-  }
-  .project-reverse {
-    gap: 30px;
+    height: 330px;
   }
   .portfolio-line-left {
     width: 60px;
@@ -238,7 +251,11 @@ h1 {
     width: 60px;
   }
 }
-
+@media (max-width: 560px) {
+  .line {
+    width: 30px;
+  }
+}
 @media (max-width: 560px) {
   .project-image {
     height: 400px;
@@ -247,36 +264,43 @@ h1 {
     font-size: 60px;
   }
 
-  .project-description{
+  .project-description {
     width: 310px;
   }
-  .project-description-buttons{
+  .project-description-buttons {
     gap: 10px;
   }
 }
 
 @media (max-width: 470px) {
-.portfolio-line-right{
-  display: none !important;
-}
-.portfolio-line-left{
-  display: none !important;
-}
-.portfolio-header{
-  justify-content: center;
-}
+  .portfolio-line-right {
+    display: none !important;
+  }
+  .portfolio-line-left {
+    display: none !important;
+  }
+  .portfolio-header {
+    justify-content: center;
+  }
+  .line {
+    display: none;
+  }
+  .line-left {
+    display: none;
+  }
+
 }
 
 @media (max-width: 430px) {
   .project-image {
     height: 300px;
   }
-  button{
+  button {
     padding: 10px 20px !important;
     font-size: 16px !important;
   }
-  .project-description{
-    span:nth-child(3){
+  .project-description {
+    span:nth-child(3) {
       padding: 0 10px;
     }
   }

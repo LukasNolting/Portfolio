@@ -12,6 +12,7 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ImprintComponent } from './imprint/imprint.component';
 import { Router, RouterLink } from '@angular/router';
+import { BackgroundComponent } from './shared/background/background.component';
 
 
 
@@ -31,6 +32,7 @@ import { Router, RouterLink } from '@angular/router';
     FooterComponent,
     ImprintComponent,
     RouterLink,
+    BackgroundComponent
   ],
 })
 export class AppComponent implements OnInit {

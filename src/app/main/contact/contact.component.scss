@@ -174,10 +174,6 @@ input:checked {
   }
 }
 
-p {
-  height: 20px;
-}
-
 .validation {
   font-size: 14px;
   font-weight: 300;
@@ -197,6 +193,25 @@ p {
   position: relative;
 }
 
+.line{
+  position: relative;
+  width: 80px;
+  .coloredLineLeft{
+      position: absolute;
+      right: 0px;
+      height: 0px;
+      width: 5000px;
+      border: #4b47ff solid 2px;
+      border-radius: 0 2px 2px 0px;
+  }
+  .coloredLineRight{
+    position: absolute;
+    left: 50px;
+    height: 0px;
+    width: 5000px;
+    border: #4b47ff solid 4px;
+}}
+
 @media (max-width: 1370px) {
   .contact-container{
     flex-direction: column;
@@ -205,9 +220,6 @@ p {
   }
   .contact-container-left{
     width: 80%;
-  }
-  .section-contact{
-    padding-top: 50px;
   }
   h1{
     font-size: 70px;
