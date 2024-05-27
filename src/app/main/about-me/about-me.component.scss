@@ -76,14 +76,18 @@ h1 {
 }
 
 @media (max-width: 1500px) {
-  h1 {
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 108px;
-  }
 
   .about-section-head {
     padding: 150px 50px 100px 50px;
+  }
+}
+
+
+
+
+@media (max-width: 1370px) {
+  h1{
+    font-size: 70px;
   }
 }
 
@@ -101,15 +105,12 @@ h1 {
   .shadow-about {
     height: 50vh;
   }
-}
-
-@media (max-width: 560px) {
-  h1 {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 60px;
+  h1{
     text-align: center;
   }
+}
+
+@media (max-width: 750px) {
 
   .about-bulb {
     gap: 20px;
@@ -127,11 +128,18 @@ h1 {
 }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 750px) {
   .about-section-head {
     padding: 50px 20px 0 20px;
   }
 }
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
 
 @media (max-width: 360px) {
   h1 {

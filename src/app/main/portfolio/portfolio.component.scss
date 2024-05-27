@@ -251,6 +251,15 @@ h1 {
     width: 60px;
   }
 }
+
+@media (max-width: 750px) {
+  .section-portfolio{
+    padding-top: 50px;
+  }
+}
+
+
+
 @media (max-width: 560px) {
   .line {
     width: 30px;

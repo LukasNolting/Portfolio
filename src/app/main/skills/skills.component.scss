@@ -121,16 +121,14 @@ h1 {
   flex-direction: column-reverse;
   align-items: center;
   gap: 110px;
-  padding: 150px 0px 90px 0px;
+  padding: 150px 0px 50px 0px;
 }
 
 .screen-button{
   display: none;
 }
 .my-skills-header{
-  height: 250px;
-  gap: 0;
-  justify-content: space-evenly !important;
+  gap: 25px;
 }
 
 .my-skills-container-mobile{
@@ -154,6 +152,13 @@ h1 {
     transform: scale(1.1);
     transition: transform 0.5s ease-out;
   }
+  }
+}
+
+@media (max-width: 750px) {
+  .section-skills{
+    padding-top: 50px;
+    gap: 50px;
   }
 }
 
