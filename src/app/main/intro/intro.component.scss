@@ -10,7 +10,7 @@ section {
   padding-top: 120px;
   max-width: 1920px;
   width: 100%;
-  height: calc(100vh - 120px);
+  // height: calc(100vh - 120px);
 }
 
 .container-intro {
@@ -310,12 +310,15 @@ img {
     justify-content: space-between;
     gap: 0;
   }
+  .intro-line{
+    min-height: 120px;
+  }
   .container-intro{
     height: auto;
   }
-  .section-intro{
-    gap: 10vh;
-  }
+  // .section-intro{
+  //   gap: 10vh;
+  // }
 }
 
 @media (max-width: 660px) {
@@ -419,13 +422,13 @@ img {
 
 @media (max-width: 900px) and (max-height: 900px) {
   .intro {
-    gap: 0 !important;
+    gap: 20px !important;
   }
   .container-intro {
     gap: 10px;
     
   }
-  .contact{
-    min-height: 100px;
-  }
+  // .contact{
+  //   min-height: 100px;
+  // }
 }
