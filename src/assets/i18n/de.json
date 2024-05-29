@@ -41,6 +41,7 @@
     "message": "Nachricht",
     "send": "Nachricht senden :)",
     "privacy": "<span>Ich akzeptiere die <a target='_blank' (click)='navigateToPrivacy()'>Datenschutzbestimmungen</a></span>",
+    "accept": "Bitte akzeptiere die Datenschutzbestimmungen",
     "thank-you": "Danke!"
   },
   "footer": {

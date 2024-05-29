@@ -41,6 +41,7 @@
     "message": "Your message",
     "send": "Send message :)",
     "privacy": "<span>I've read the<a target='_blank' (click)='navigateToPrivacy()'>privacy policy</a>and agree to the processing of my data as outlined.</span>",
+    "accept": "Please accept the privacy policy",
     "thank-you": "Thanks!"
   },
   "footer": {
