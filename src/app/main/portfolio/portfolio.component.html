@@ -15,18 +15,17 @@
     </div>
     <div class="portfolio-header-text">
       <span>
-        Explore a selection of my work here - Interact with projects to see my
-        skills in action.
+        {{ "portfolio.description" | translate }}
       </span>
     </div>
 
     <div class="projects-container">
       <div
-        *ngFor="let project of project"
-        class="project-{{ project.sequence }}"
+        *ngFor="let projects of projects"
+        class="project-{{ projects.sequence }}"
       >
         <img
-          src="{{ project.image }}"
+          src="{{ projects.image }}"
           alt=""
           data-aos="flip-left"
           data-aos-duration="1500"
@@ -36,30 +35,30 @@
           data-aos="flip-left"
           data-aos-duration="1500"
           [ngStyle]="{
-            'align-items': project.sequence == 'regular' ? 'start' : 'end'
+            'align-items': projects.sequence == 'regular' ? 'start' : 'end'
           }"
           [ngStyle]="{
-            'text-align': project.sequence == 'regular' ? 'start' : 'end'
+            'text-align': projects.sequence == 'regular' ? 'start' : 'end'
           }"
           class="project-description"
         >
           <div class="project-overview">
-            <span>{{ project.title }}</span>
-            <span>{{ project.languages }}</span>
-            <span>{{ project.description }}</span>
+            <span>{{ projects.title }}</span>
+            <span>{{ projects.languages }}</span>
+            <span>{{ projects.translatedDescription | translate }}</span>
           </div>
           <div
             class="project-description-buttons"
             [ngStyle]="{
               'justify-content':
-                project.sequence == 'regular' ? 'flex-start' : 'flex-end'
+                projects.sequence == 'regular' ? 'flex-start' : 'flex-end'
             }"
           >
-            <a href="{{ project.directLink }}" target="_blank"
+            <a href="{{ projects.directLink }}" target="_blank"
               ><button>Live test</button></a
             >
 
-            <a href="{{ project.gitHubLink }}" target="_blank"
+            <a href="{{ projects.gitHubLink }}" target="_blank"
               ><button>Github</button></a
             >
           </div>

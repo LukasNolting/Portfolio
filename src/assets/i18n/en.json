@@ -16,31 +16,37 @@
   "about-me": {
     "title": "About me",
     "description": "lorem ipsum",
-    "pulp": "lorem ipsum",
+    "bulp": "lorem ipsum",
     "puzzle": "lorem ipsum"
   },
   "skills": {
     "title": "My Skills",
     "description": "lorem ipsum",
-    "getintouch": "Contact me"
+    "getintouch": "Get in Touch"
   },
   "portfolio": {
     "title": "Portfolio",
-    "description": "lorem ipsum",
-    "join": "lorem ipsum",
-    "el-polo-loco": "lorem ipsum",
-    "simple-crm": "lorem ipsum"
+    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "el-pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "simple-crm": "A very Simple Customer Relationship Management system working with CRUD functionality."
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Got a Problem to solve?",
-    "description": "lorem ipsum",
-    "contact": "Need a Frontend developer? <b>Contact me!</b>",
+    "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "contact": "Need a Frontend developer? ",
+    "contact-bold": "Contact me!",
     "name": "Your name",
+    "name-valid": "Please enter a valid name",
     "email": "Your email",
+    "email-valid": "Please enter a valid email",
     "message": "Your message",
+    "message-valid": "Your message must be at least 10 characters long",
     "send": "Send message :)",
-    "privacy": "<span>I've read the<a target='_blank' (click)='navigateToPrivacy()'>privacy policy</a>and agree to the processing of my data as outlined.</span>",
+    "privacy-before": "I've read the ",
+    "privacy-link": "privacy policy ",
+    "privacy-after": "and agree to the processing of my data as outlined.",
     "accept": "Please accept the privacy policy",
     "thank-you": "Thanks!"
   },

@@ -16,7 +16,7 @@
   "about-me": {
     "title": "Über mich",
     "description": "lorem ipsum",
-    "pulp": "lorem ipsum",
+    "bulp": "lorem ipsum",
     "puzzle": "lorem ipsum"
   },
   "skills": {
@@ -28,19 +28,25 @@
     "title": "Portfolio",
     "description": "lorem ipsum",
     "join": "lorem ipsum",
-    "el-polo-loco": "lorem ipsum",
+    "el-pollo-loco": "lorem ipsum",
     "simple-crm": "lorem ipsum"
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Haben Sie ein Problem zu beheben?",
     "description": "lorem ipsum",
-    "contact": "Benötigen Sie einen Frontend Entwickler? <b>Kontaktieren Sie mich!</b>",
+    "contact": "Benötigen Sie einen Frontend Entwickler?",
+    "contact-bold": "Kontaktieren Sie mich!",
     "name": "Name",
+    "name-valid": "Bitte geben Sie Ihren Namen ein",
     "email": "E-Mail",
+    "email-valid": "Bitte geben Sie Ihre E-Mail Adresse ein",
     "message": "Nachricht",
+    "message-valid": "Ihre Nachricht muss mindestens 10 Zeichen lang sein",
     "send": "Nachricht senden :)",
-    "privacy": "<span>Ich akzeptiere die <a target='_blank' (click)='navigateToPrivacy()'>Datenschutzbestimmungen</a></span>",
+    "privacy-before": "Ich akzeptiere die ",
+    "privacy-link": "Datenschutzbestimmungen ",
+    "privacy-after": "und bin damit einverstanden.",
     "accept": "Bitte akzeptiere die Datenschutzbestimmungen",
     "thank-you": "Danke!"
   },

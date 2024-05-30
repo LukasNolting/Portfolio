@@ -6,17 +6,16 @@
     <div class="line">
             <div class="coloredLineLeft"></div>
         </div>
-    <h1>Contact</h1>
+    <h1>{{ "contact.title" | translate }}</h1>
   </div>
 
   <div class="contact-container">
     <div class="contact-container-left">
-      <h2>Got a problem to solve?</h2>
+      <h2>{{ "contact.subtitle" | translate }}</h2>
       <span>
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
+        {{ "contact.description" | translate }}
       </span>
-      <span> Need a Frontend developer? <b>Contact me!</b> </span>
+      <span> {{ "contact.contact" | translate }} <b>{{ "contact.contact-bold" | translate }}</b> </span>
     </div>
     <div class="contact-container-right">
       <form class="contact-container-form" #contactForm="ngForm" return false>
@@ -26,7 +25,7 @@
             name="name"
             id="name"
             type="text"
-            placeholder="Your name"
+            placeholder="{{ 'contact.name' | translate }}"
             minlength="4"
             required
             #name="ngModel"
@@ -56,7 +55,7 @@
 
           <p>
             @if (!name.valid && name.touched) {
-            <span class="validation">Please enter a valid name</span>
+            <span class="validation"> {{ "contact.name-valid" | translate}}       </span>
             }
           </p>
         </div>
@@ -67,7 +66,7 @@
             name="email"
             id="email"
             type="text"
-            placeholder="Your email"
+            placeholder="{{ 'contact.email' | translate }}"
             required
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             minlength="8"
@@ -97,7 +96,7 @@
           </span>
           <p>
             @if (!email.valid && email.touched) {
-            <span class="validation">Please enter a valid email</span>
+            <span class="validation">{{ "contact.email-valid" | translate}}</span>
             }
           </p>
         </div>
@@ -108,7 +107,7 @@
             name="Your message"
             id="message"
             minlength="10"
-            placeholder="Your message"
+            placeholder="{{ 'contact.message' | translate }}"
             autocomplete="off"
             required
             #message="ngModel"
@@ -138,12 +137,14 @@
           <p>
             @if (!message.valid && message.touched) {
             <span class="validation"
-              >Your message must be at least 10 characters long</span
+              >{{ "contact.message-valid" | translate}}</span
             >
             }
           </p>
         </div>
         <div class="contact-container-right-privacy">
+          
+          <div style="display: flex; align-items: center; gap: 10px">
           <input
             type="checkbox"
             [(ngModel)]="contactData.privacy"
@@ -152,16 +153,23 @@
             required
             #privacy="ngModel"
           />
+          
           <span
-            >I've read the
+            >{{ "contact.privacy-before" | translate}}
             <a
               
               target="_blank"
               (click)="navigateToPrivacy()"
-              >privacy policy</a
+              >{{ "contact.privacy-link" | translate}}</a
             >
-            and agree to the processing of my data as outlined.</span
+            {{ "contact.privacy-after" | translate}}</span
           >
+          </div>
+          <p>
+          @if (!contactData.privacy && message.touched && name.touched && email.touched) {
+          <span class="validation">{{ "contact.accept" | translate}}</span>
+          }
+          </p>
         </div>
 
         <button
@@ -172,7 +180,7 @@
             'cursor': (contactForm.valid) ? 'pointer' : 'not-allowed'
           }"
         >
-          Send message :)
+          {{ 'contact.send' | translate }}
         </button>
       </form>
     </div>

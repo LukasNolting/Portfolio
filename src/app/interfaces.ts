@@ -11,4 +11,5 @@ export interface Portfolio {
   directLink: string;
   gitHubLink: string;
   sequence: string;
+  translatedDescription: string;
 }

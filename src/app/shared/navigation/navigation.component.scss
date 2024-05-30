@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+a.activeLanguage {
+  content: "";
+  color: #00bee8;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

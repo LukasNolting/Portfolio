@@ -1,60 +1,65 @@
 <section>
-<div class="section-intro">
-  <!-- <img src="assets/img/intro/wave.png" alt="" class="wave-img" /> -->
-  <div class="container-intro">
-    <div class="character">
-      <img src="assets/img/intro/character.png" alt="" />
-      <!-- <img src="assets/img/intro/shadows.png" alt="" /> -->
-    </div>
-    <div class="intro">
-      <div class="descr">
-        <span class="descr-iam">I am</span>
-        <div class="name">
-          <span>Lukas Nolting</span>
-          <span>FRONTEND DEVELOPER</span>
-        </div>
+  <div class="section-intro">
+    <!-- <img src="assets/img/intro/wave.png" alt="" class="wave-img" /> -->
+    <div class="container-intro">
+      <div class="character">
+        <img src="assets/img/intro/character.png" alt="" />
+        <!-- <img src="assets/img/intro/shadows.png" alt="" /> -->
       </div>
-      <a href="#contact"><button>Let´s talk!</button></a>
+      <div class="intro">
+        <div class="descr">
+          <span class="descr-iam">{{ "intro.iam" | translate }}</span>
+          <div class="name">
+            <span>Lukas Nolting</span>
+            <span>{{ "intro.iam-subtitle" | translate }}</span>
+          </div>
+        </div>
+        <a href="#contact"
+          ><button>{{ "intro.button" | translate }}</button></a
+        >
+      </div>
     </div>
-  </div>
 
-  <div class="intro-line">
-    <div class="intro-contact">
-      <div class="contact">
-        
-        <div class="line">
+    <div class="intro-line">
+      <div class="intro-contact">
+        <div class="contact">
+          <div class="line">
             <div class="coloredLineLeft"></div>
-        </div>
-        
-    
-        <a href="https://github.com/LukasNolting" target="_blank">
-          <img src="assets/img/intro/intro-github.svg" alt="" />
-        </a>
-        <a href="mailto:info@lukas-nolting.de">
-          <img src="assets/img/intro/intro-email.svg" alt="" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/lukas-nolting-1aa559296/"
-          target="_blank"
-        >
-          <img src="assets/img/intro/intro-linkedin.svg" alt="" />
-        </a>
-        <a href="mailto:info@lukas-nolting.de" class="hover-underline-animation"
-          >info&#64;lukas-nolting.de</a
-        >
-        <div class="line-right d-none-line">
+          </div>
+
+          <a href="https://github.com/LukasNolting" target="_blank">
+            <img src="assets/img/intro/intro-github.svg" alt="" />
+          </a>
+          <a href="mailto:info@lukas-nolting.de">
+            <img src="assets/img/intro/intro-email.svg" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lukas-nolting-1aa559296/"
+            target="_blank"
+          >
+            <img src="assets/img/intro/intro-linkedin.svg" alt="" />
+          </a>
+          <a
+            href="mailto:info@lukas-nolting.de"
+            class="hover-underline-animation"
+            >info&#64;lukas-nolting.de</a
+          >
+          <div class="line-right d-none-line">
             <div class="coloredLineLeft"></div>
+          </div>
         </div>
       </div>
+      <div class="intro-scroll">
+        
+          <span>{{ "intro.scroll" | translate }}</span>
+
+          <img
+            src="assets/img/intro/arrow-scroll.png"
+            alt=""
+            class="intro-scroll-img"
+          />
+        
+      </div>
     </div>
-    <div class="intro-scroll">
-      <img
-        src="assets/img/intro/Scroll down.png"
-        alt=""
-        class="intro-scroll-img"
-      />
-    </div>
-  </div>
   </div>
 </section>
-

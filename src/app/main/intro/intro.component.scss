@@ -178,15 +178,29 @@ section {
 
 .intro-scroll {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: end;
-  gap: 8px;
+      width: auto;
+      gap: 10px;
+      span{
+    height: 100px;
+    transform: rotate(90deg);
+    text-align: start;
+
+  }
+  img{
+    width: 15px;
+    height: 15px;
+  }
+  // gap: 8px;
   transform-origin: bottom right;
-  right: 0;
-  top: 0;
-  transform: rotate(0deg) translateX(100%) translateY(0%);
-  font-weight: 400;
-  font-size: 23px;
-  box-sizing: border-box;
+  // right: 0;
+  // top: 0;
+  // transform: rotate(0deg) translateX(100%) translateY(0%);
+  // font-weight: 400;
+  // font-size: 23px;
+  // box-sizing: border-box;
 }
 
 img {
