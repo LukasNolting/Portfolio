@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, Injectable } from '@angular/core';
+import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
+})
+@Injectable({
+  providedIn: 'root',
 })
 export class NavigationComponent {
   isImprintPage: boolean = false;
@@ -47,6 +50,32 @@ export class NavigationComponent {
     this.router.navigateByUrl('/').then(() => {
       window.scrollTo(0, 0);
     });
+  }
+
+  navigateTo(target: string, offset: number = 0) {
+    const currentUrl = this.router.url;
+    if (currentUrl === '/' || currentUrl.startsWith('/#')) {
+      this.scrollToSection(target, offset);
+    } else {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          this.scrollToSection(target, offset);
+        }, 100);
+      });
+    }
+  }
+
+  private scrollToSection(elementId: string, offset: number) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
   }
 
   changeLanguage(langCode: string) {

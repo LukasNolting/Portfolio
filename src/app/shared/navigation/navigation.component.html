@@ -10,17 +10,17 @@
     /></a>
     <ul class="list-screen">
       <a
-        href="http://localhost:4200/#about-me"
+        (click)="navigateTo('about-me', 20)"
         class="hover-underline-animation"
         >{{ "navigation.about-me" | translate }}</a
       >
       <a
-        href="http://localhost:4200/#skills"
+        (click)="navigateTo('skills', 20)"
         class="hover-underline-animation"
         >{{ "navigation.skills" | translate }}</a
       >
       <a
-        href="http://localhost:4200/#portfolio"
+        (click)="navigateTo('portfolio', 20)"
         class="hover-underline-animation"
         >{{ "navigation.portfolio" | translate }}</a
       >
