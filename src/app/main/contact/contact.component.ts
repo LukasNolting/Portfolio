@@ -13,6 +13,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  sendmail = false;
   constructor(
     private router: Router,
     public translateService: TranslateService
@@ -57,10 +58,10 @@ export class ContactComponent {
             console.error(error);
           },
           complete: () => {
-            console.info('send post complete');
+            this.sendmail = true;
             setTimeout(() => {
-              console.log('complete');
-            }, 1000);
+              this.sendmail = false;
+            }, 5000);
           },
         });
     }

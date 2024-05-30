@@ -19,6 +19,9 @@
     </div>
     <div class="contact-container-right">
       <form class="contact-container-form" #contactForm="ngForm" return false>
+        @if (sendmail) {
+        <div class="contact-thank-you">Vielen Dank für Ihre Nachricht!</div>
+        }
         <div class="contact-container-input-fields">
           <input
             [(ngModel)]="contactData.name"

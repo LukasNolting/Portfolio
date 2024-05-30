@@ -15,13 +15,13 @@
   },
   "about-me": {
     "title": "About me",
-    "description": "lorem ipsum",
-    "bulp": "lorem ipsum",
-    "puzzle": "lorem ipsum"
+    "description": "Hello, I'm a web application software developer from Wittmund, Lower Saxony. I combine software development and IT with passion and fascination. Currently, I'm undergoing training to become a Fullstack Web Developer. I've already implemented initial projects like a Kanban board JOIN, a game called El Pollo Loco, and a simple CRM system with CRUD functionalities with a lot of motivation and interest in the code.",
+    "bulp": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, totam eligendi. Architecto vero aspernatur reprehenderit. Dolores enim eaque officia odit maiores quas, nam voluptatum! Tempora tempore tenetur eligendi repellat repudiandae!",
+    "puzzle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, totam eligendi. Architecto vero aspernatur reprehenderit. Dolores enim eaque officia odit maiores quas, nam voluptatum! Tempora tempore tenetur eligendi repellat repudiandae!"
   },
   "skills": {
     "title": "My Skills",
-    "description": "lorem ipsum",
+    "description": "I have grown my frontend developments skills that have allowed me to create different real projects.",
     "getintouch": "Get in Touch"
   },
   "portfolio": {

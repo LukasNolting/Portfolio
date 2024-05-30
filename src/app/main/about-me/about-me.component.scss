@@ -65,13 +65,17 @@ h1 {
 .character-container {
   display: flex;
   align-items: center;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #1cdae6;
   img:nth-child(1) {
-    border-radius: 50%;
-    border: 4px solid #1cdae6;
+    position: absolute;
     width: 400px;
-  }
-  img:nth-child(2) {
-    width: 15vw;
+    height: auto;
+    transform: translate(61px, 58px);
   }
 }
 

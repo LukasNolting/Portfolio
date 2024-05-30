@@ -15,26 +15,26 @@
   },
   "about-me": {
     "title": "Über mich",
-    "description": "lorem ipsum",
-    "bulp": "lorem ipsum",
-    "puzzle": "lorem ipsum"
+    "description": "Hallo, ich bin Software-Entwickler für Webanwendungen aus Wittmund, Niedersachsen. Softwareentwicklung & IT verbinde ich mit Leidenschaft und Faszination. Zurzeit absolviere ich eine Ausbildung zum Fullstack Web-Entwickler. Erste Projekte wie ein Kanbanboard JOIN, ein Spiel El Pollo Loco oder ein einfaches CRM System mit CRUD Funktionalitäten habe ich bereits mit viel Motivation und Interesse am Code umgesetzt.",
+    "bulp": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, totam eligendi. Architecto vero aspernatur reprehenderit. Dolores enim eaque officia odit maiores quas, nam voluptatum! Tempora tempore tenetur eligendi repellat repudiandae!",
+    "puzzle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, totam eligendi. Architecto vero aspernatur reprehenderit. Dolores enim eaque officia odit maiores quas, nam voluptatum! Tempora tempore tenetur eligendi repellat repudiandae!"
   },
   "skills": {
     "title": "Meine Fähigkeiten",
-    "description": "lorem ipsum",
+    "description": "Ich habe meine Fähigkeiten in der Frontend-Entwicklung weiterentwickelt, wodurch ich in der Lage bin, verschiedene reale Projekte zu erstellen.",
     "getintouch": "Kontaktiere mich"
   },
   "portfolio": {
     "title": "Portfolio",
-    "description": "lorem ipsum",
-    "join": "lorem ipsum",
-    "el-pollo-loco": "lorem ipsum",
-    "simple-crm": "lorem ipsum"
+    "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "join": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "el-pollo-loco": "Ein Jump'n'Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "simple-crm": "Ein sehr einfaches Kundenbeziehungsmanagement-System, das mit CRUD-Funktionalität funktioniert."
   },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Haben Sie ein Problem zu beheben?",
-    "description": "lorem ipsum",
+    "description": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und durch meine Arbeit zu Ihren Projekten beizutragen.",
     "contact": "Benötigen Sie einen Frontend Entwickler?",
     "contact-bold": "Kontaktieren Sie mich!",
     "name": "Name",
@@ -43,7 +43,7 @@
     "email-valid": "Bitte geben Sie Ihre E-Mail Adresse ein",
     "message": "Nachricht",
     "message-valid": "Ihre Nachricht muss mindestens 10 Zeichen lang sein",
-    "send": "Nachricht senden :)",
+    "send": "Nachricht senden",
     "privacy-before": "Ich akzeptiere die ",
     "privacy-link": "Datenschutzbestimmungen ",
     "privacy-after": "und bin damit einverstanden.",

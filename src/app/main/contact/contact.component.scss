@@ -31,6 +31,25 @@ h2 {
   padding-bottom: 80px;
 }
 
+.contact-thank-you{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  background-color: #141d2f;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #00bee8;
+  font-size: 24px; 
+}
+
+.d-none{
+  display: none !important;
+}
+
 .contact-container {
   padding: 0 92px 180px;
   display: flex;
