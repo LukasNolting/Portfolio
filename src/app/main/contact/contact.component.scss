@@ -182,8 +182,8 @@ input:checked {
   background-size: auto;
   background-position: center;
   position: absolute;
-  bottom: 90px;
-  right: 100px;
+  bottom: 40px;
+  right: 40px;
   width: 43px;
   height: 43px;
   &:hover {
@@ -262,9 +262,6 @@ input:checked {
   }
 }
 @media (max-width: 690px) {
-  .contact-arrow{
-    right: 50px;
-  }
   .text-header{
     padding-bottom: 0;
   }
@@ -289,8 +286,8 @@ input:checked {
     gap: 40px;
   }
   .contact-arrow{
-    right: 10px;
-    bottom: 115px;
+    right: 20px;
+    bottom: 20px;
   }
 
   h2{
@@ -315,12 +312,21 @@ input:checked {
     }
   }
   .contact-container-right-privacy{
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   .contact-container{
     padding: 50px 20px;
   }
     h2{
     font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+    .contact-arrow{
+    right: 10px;
+    bottom: 10px;
+  }
+  .contact-container-form{
+    padding-bottom: 20px;
   }
 }

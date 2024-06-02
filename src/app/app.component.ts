@@ -50,5 +50,5 @@ export class AppComponent implements OnInit {
       AOS.init();
     }
   }
-  title = 'Portfolio';
+  title = 'Lukas Nolting';
 }
