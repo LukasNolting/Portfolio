@@ -1,193 +1,196 @@
-
 <!-- <img src="assets/img/contact/contact-shadow-1.png" class="contact-shadow-1" /> -->
 <section id="contact">
   <div class="section-contact">
-  <div class="text-header">
-    <div class="line">
-            <div class="coloredLineLeft"></div>
-        </div>
-    <h1>{{ "contact.title" | translate }}</h1>
-  </div>
-
-  <div class="contact-container">
-    <div class="contact-container-left">
-      <h2>{{ "contact.subtitle" | translate }}</h2>
-      <span>
-        {{ "contact.description" | translate }}
-      </span>
-      <span> {{ "contact.contact" | translate }} <b>{{ "contact.contact-bold" | translate }}</b> </span>
+    <div class="text-header">
+      <div class="line">
+        <div class="coloredLineLeft"></div>
+      </div>
+      <h1>{{ "contact.title" | translate }}</h1>
     </div>
-    <div class="contact-container-right">
-      <form class="contact-container-form" #contactForm="ngForm" return false>
-        @if (sendmail) {
-        <div class="contact-thank-you">Vielen Dank für Ihre Nachricht!</div>
-        }
-        <div class="contact-container-input-fields">
-          <input
-            [(ngModel)]="contactData.name"
-            name="name"
-            id="name"
-            type="text"
-            placeholder="{{ 'contact.name' | translate }}"
-            minlength="4"
-            required
-            #name="ngModel"
-            [ngStyle]="{
-              'border-color':
-                !name.valid && (name.touched || name.dirty)
-                  ? 'red'
-                  : name.valid && (name.touched || name.dirty)
-                  ? 'green'
-                  : '#4b47ff'
-            }"
-          />
-          <span class="validation-container">
-            <img
-              *ngIf="!name.valid && name.touched"
-              src="assets/img/contact/invalid.svg"
-              alt=""
-              class="validation-icons"
-            />
-            <img
-              *ngIf="name.valid && name.touched"
-              src="assets/img/contact/valid.svg"
-              alt=""
-              class="validation-icons"
-            />
-          </span>
 
-          <p>
-            @if (!name.valid && name.touched) {
-            <span class="validation"> {{ "contact.name-valid" | translate}}       </span>
-            }
-          </p>
-        </div>
-
-        <div class="contact-container-input-fields">
-          <input
-            [(ngModel)]="contactData.email"
-            name="email"
-            id="email"
-            type="text"
-            placeholder="{{ 'contact.email' | translate }}"
-            required
-            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-            minlength="8"
-            #email="ngModel"
-            [ngStyle]="{
-              'border-color':
-                !email.valid && (email.touched || email.dirty)
-                  ? 'red'
-                  : email.valid && (email.touched || email.dirty)
-                  ? 'green'
-                  : '#4b47ff'
-            }"
-          />
-          <span class="validation-container">
-            <img
-              *ngIf="!email.valid && email.touched"
-              src="assets/img/contact/invalid.svg"
-              alt=""
-              class="validation-icons"
-            />
-            <img
-              *ngIf="email.valid && email.touched"
-              src="assets/img/contact/valid.svg"
-              alt=""
-              class="validation-icons"
-            />
-          </span>
-          <p>
-            @if (!email.valid && email.touched) {
-            <span class="validation">{{ "contact.email-valid" | translate}}</span>
-            }
-          </p>
-        </div>
-
-        <div class="contact-container-input-fields">
-          <textarea
-            [(ngModel)]="contactData.message"
-            name="Your message"
-            id="message"
-            minlength="10"
-            placeholder="{{ 'contact.message' | translate }}"
-            autocomplete="off"
-            required
-            #message="ngModel"
-            [ngStyle]="{
-              'border-color':
-                !message.valid && (message.touched || message.dirty)
-                  ? 'red'
-                  : message.valid && (message.touched || message.dirty)
-                  ? 'green'
-                  : '#4b47ff'
-            }"
-          ></textarea>
-          <span class="validation-container">
-            <img
-              *ngIf="!message.valid && message.touched"
-              src="assets/img/contact/invalid.svg"
-              alt=""
-              class="validation-icons"
-            />
-            <img
-              *ngIf="message.valid && message.touched"
-              src="assets/img/contact/valid.svg"
-              alt=""
-              class="validation-icons"
-            />
-          </span>
-          <p>
-            @if (!message.valid && message.touched) {
-            <span class="validation"
-              >{{ "contact.message-valid" | translate}}</span
-            >
-            }
-          </p>
-        </div>
-        <div class="contact-container-right-privacy">
-          
-          <div style="display: flex; align-items: center; gap: 10px">
-          <input
-            type="checkbox"
-            [(ngModel)]="contactData.privacy"
-            name="privacy"
-            id="Ford"
-            required
-            #privacy="ngModel"
-          />
-          
-          <span
-            >{{ "contact.privacy-before" | translate}}
-            <a
-              
-              target="_blank"
-              (click)="navigateToPrivacy()"
-              >{{ "contact.privacy-link" | translate}}</a
-            >
-            {{ "contact.privacy-after" | translate}}</span
-          >
-          </div>
-          <p>
-          @if (!contactData.privacy && message.touched && name.touched && email.touched) {
-          <span class="validation">{{ "contact.accept" | translate}}</span>
+    <div class="contact-container">
+      <div class="contact-container-left">
+        <h2>{{ "contact.subtitle" | translate }}</h2>
+        <span>
+          {{ "contact.description" | translate }}
+        </span>
+        <span>
+          {{ "contact.contact" | translate }}
+          <b>{{ "contact.contact-bold" | translate }}</b>
+        </span>
+      </div>
+      <div class="contact-container-right">
+        <form class="contact-container-form" #contactForm="ngForm" return false>
+          @if (sendmail) {
+          <div class="contact-thank-you">Vielen Dank für Ihre Nachricht!</div>
           }
-          </p>
-        </div>
+          <div class="contact-container-input-fields">
+            <input
+              [(ngModel)]="contactData.name"
+              name="name"
+              id="name"
+              type="text"
+              placeholder="{{ 'contact.name' | translate }}"
+              minlength="4"
+              required
+              #name="ngModel"
+              [ngStyle]="{
+                'border-color':
+                  !name.valid && (name.touched || name.dirty)
+                    ? 'red'
+                    : name.valid && (name.touched || name.dirty)
+                    ? 'green'
+                    : '#4b47ff'
+              }"
+            />
+            <span class="validation-container">
+              <img
+                *ngIf="!name.valid && name.touched"
+                src="assets/img/contact/invalid.svg"
+                alt=""
+                class="validation-icons"
+              />
+              <img
+                *ngIf="name.valid && name.touched"
+                src="assets/img/contact/valid.svg"
+                alt=""
+                class="validation-icons"
+              />
+            </span>
 
-        <button
-          [disabled]="contactForm.invalid"
-          (click)="onSubmit(contactForm)"
-          [ngStyle]="{
-            'background-color': (contactForm.valid) ? '#00bee8' : 'grey',
-            'cursor': (contactForm.valid) ? 'pointer' : 'not-allowed'
-          }"
-        >
-          {{ 'contact.send' | translate }}
-        </button>
-      </form>
+            <p>
+              @if (!name.valid && name.touched) {
+              <span class="validation">
+                {{ "contact.name-valid" | translate }}
+              </span>
+              }
+            </p>
+          </div>
+
+          <div class="contact-container-input-fields">
+            <input
+              [(ngModel)]="contactData.email"
+              name="email"
+              id="email"
+              type="text"
+              placeholder="{{ 'contact.email' | translate }}"
+              required
+              pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}"
+              minlength="8"
+              #email="ngModel"
+              [ngStyle]="{
+                'border-color':
+                  !email.valid && (email.touched || email.dirty)
+                    ? 'red'
+                    : email.valid && (email.touched || email.dirty)
+                    ? 'green'
+                    : '#4b47ff'
+              }"
+            />
+            <span class="validation-container">
+              <img
+                *ngIf="!email.valid && email.touched"
+                src="assets/img/contact/invalid.svg"
+                alt=""
+                class="validation-icons"
+              />
+              <img
+                *ngIf="email.valid && email.touched"
+                src="assets/img/contact/valid.svg"
+                alt=""
+                class="validation-icons"
+              />
+            </span>
+            <p>
+              @if (!email.valid && email.touched) {
+              <span class="validation">{{
+                "contact.email-valid" | translate
+              }}</span>
+              }
+            </p>
+          </div>
+
+          <div class="contact-container-input-fields">
+            <textarea
+              [(ngModel)]="contactData.message"
+              name="Your message"
+              id="message"
+              minlength="10"
+              placeholder="{{ 'contact.message' | translate }}"
+              autocomplete="off"
+              required
+              #message="ngModel"
+              [ngStyle]="{
+                'border-color':
+                  !message.valid && (message.touched || message.dirty)
+                    ? 'red'
+                    : message.valid && (message.touched || message.dirty)
+                    ? 'green'
+                    : '#4b47ff'
+              }"
+            ></textarea>
+            <span class="validation-container">
+              <img
+                *ngIf="!message.valid && message.touched"
+                src="assets/img/contact/invalid.svg"
+                alt=""
+                class="validation-icons"
+              />
+              <img
+                *ngIf="message.valid && message.touched"
+                src="assets/img/contact/valid.svg"
+                alt=""
+                class="validation-icons"
+              />
+            </span>
+            <p>
+              @if (!message.valid && message.touched) {
+              <span class="validation">{{
+                "contact.message-valid" | translate
+              }}</span>
+              }
+            </p>
+          </div>
+          <div class="contact-container-right-privacy">
+            <div style="display: flex; align-items: center; gap: 10px">
+              <input
+                type="checkbox"
+                [(ngModel)]="contactData.privacy"
+                name="privacy"
+                id="Ford"
+                required
+                #privacy="ngModel"
+              />
+
+              <span
+                >{{ "contact.privacy-before" | translate }}
+                <a target="_blank" (click)="navigateToPrivacy()">{{
+                  "contact.privacy-link" | translate
+                }}</a>
+                {{ "contact.privacy-after" | translate }}</span
+              >
+            </div>
+            <p>
+              @if (!contactData.privacy && message.touched && name.touched &&
+              email.touched) {
+              <span class="validation">{{ "contact.accept" | translate }}</span>
+              }
+            </p>
+          </div>
+
+          <button
+            [disabled]="contactForm.invalid"
+            (click)="onSubmit(contactForm)"
+            [ngStyle]="{
+              'background-color': contactForm.valid ? '#00bee8' : 'grey',
+              cursor: contactForm.valid ? 'pointer' : 'not-allowed'
+            }"
+          >
+            {{ "contact.send" | translate }}
+          </button>
+        </form>
+      </div>
     </div>
+    <a href="#intro"><div class="contact-arrow"></div></a>
   </div>
-  <a href="#intro"><div class="contact-arrow"></div></a>
-</div>
 </section>
