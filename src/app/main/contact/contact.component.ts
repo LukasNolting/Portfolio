@@ -28,7 +28,7 @@ export class ContactComponent {
   };
 
   post = {
-    endPoint: 'https://lukas-nolting.de/sendMail.php',
+    endPoint: 'https://lukas-nolting.eu/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -46,16 +46,11 @@ export class ContactComponent {
         name: this.contactData.name,
         privacy: this.contactData.privacy,
       };
-      console.log(payload);
-
       this.http
         .post(this.post.endPoint, this.post.body(payload), this.post.options)
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
           },
           complete: () => {
             this.sendmail = true;
