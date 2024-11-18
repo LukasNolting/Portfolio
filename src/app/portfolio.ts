@@ -1,16 +1,16 @@
 import { Portfolio } from './interfaces';
 
 export const portfolio: Portfolio[] = [
-  {
-    image: 'assets/img/portfolio/join.png',
-    title: 'Join',
-    languages: 'JavaScript | HTML | CSS | API',
-    description: 'join',
-    directLink: 'https://join.lukas-nolting.eu',
-    gitHubLink: 'https://github.com/LukasNolting/JOIN',
-    sequence: 'regular',
-    translatedDescription: '',
-  },
+  // {
+  //   image: 'assets/img/portfolio/join.png',
+  //   title: 'Join',
+  //   languages: 'JavaScript | HTML | CSS | API',
+  //   description: 'join',
+  //   directLink: 'https://join.lukas-nolting.eu',
+  //   gitHubLink: 'https://github.com/LukasNolting/JOIN',
+  //   sequence: 'regular',
+  //   translatedDescription: '',
+  // },
   {
     image: 'assets/img/portfolio/el-pollo-loco.png',
     title: 'El Polo Loco',
