@@ -29,7 +29,8 @@
     "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
     "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "el-pollo-loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "videoflix": "A custom video platform with a uniquely designed backend. Save your favorites and continue watching right where you left off."
+    "videoflix": "A custom video platform with a uniquely designed backend. Save your favorites and continue watching right where you left off.",
+    "coderr": "A platform where you can find and hire software developers for your projects."
   },
   "contact": {
     "title": "Contact",
