@@ -12,6 +12,16 @@ export const portfolio: Portfolio[] = [
   //   translatedDescription: '',
   // },
   {
+    image: 'assets/img/portfolio/coderr.png',
+    title: 'Coderr',
+    languages: 'Django | Python | PostgreSQL',
+    description: 'coderr',
+    directLink: 'https://coderr.lukas-nolting.eu',
+    gitHubLink: 'https://github.com/LukasNolting/coderr-backend',
+    sequence: 'regular',
+    translatedDescription: '',
+  },
+  {
     image: 'assets/img/portfolio/el-pollo-loco.png',
     title: 'El Polo Loco',
     languages: 'JavaScript | HTML | CSS',
