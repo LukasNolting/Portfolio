@@ -27,7 +27,7 @@ export const portfolio: Portfolio[] = [
     languages: 'Django | Python | Angular | TypeScript',
     description: 'videoflix',
     directLink: 'https://videoflix.lukas-nolting.eu',
-    gitHubLink: 'https://github.com/LukasNolting/Videoflix',
+    gitHubLink: 'https://github.com/LukasNolting/videoflix-backend',
     sequence: 'regular',
     translatedDescription: '',
   },
